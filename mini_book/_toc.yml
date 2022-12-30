@@ -1,0 +1,16 @@
+format: jb-book
+root: docs/index
+parts:
+- caption: Course Overview
+  chapters:
+  - file: docs/course_schedule
+  - file: docs/eval_grades_py
+  - file: docs/dartmouth_policies
+- caption: Software Setup
+  chapters:
+  - file: docs/software_setup
+- caption: Final Project
+  chapters:
+  - file: docs/finalproject_overview
+  - file: docs/finalproject_options
+  - file: docs/finalproject_components

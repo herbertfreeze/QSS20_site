@@ -1,22 +1,54 @@
 # QSS 20. Modern Statistical Computing
 
-Social scientists are investigating questions that have led to two changes in their computing workflow.
+QSS 20 is a foundational and required course in the Quantitative Social Science curriculum that equips students with the computing literacy to conduct social science research in the age of “big data.” The skills students learn in QSS 20 are building blocks for data science applications from research to industry to nonprofits and government. This course builds on students' introductory programming course and teaches you how to draw meaningful insights from real-world, often messy datasets, so you can help incorporate data into decision-making and analysis. The course will teach students to quickly pick up new methods and find patterns in large-scale data—essential skills given that methods and tools for modern statistical computing develop at a rapid pace, and in real-world data science you sometimes don’t know what tools you need to know until you need to know them. 
 
-One change is the use of new forms of data, such as [text data to study how police officers use different language when interacting with Black drivers than with White drivers](https://www.pnas.org/content/114/25/6521); [spatial data to study the geographic clustering of autism diagnoses in more affluent communities](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2927813/); [cellphone mobility data to (try) to estimate COVID-19 mobility patterns](https://arxiv.org/pdf/2011.07194.pdf).
+Our topics will include data wrangling and visualization, including merging datasets and SQL for database manipulation; data extraction via APIs and web-scraping; processing and analyzing text as data; and supervised machine learning. Students will also be exposed to [Git/GitHub](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners) for version control and reproducibility, the command line for scalable computing, and [LaTeX](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) for smart typesetting and collaborative workflows. In addition to introductory coding modules via DataCamp, in-class activities, and problem sets, the course will culminate in a group-based, applied data science project using a real-world dataset with social impact.
 
-The second change is the use of new methods to discern patterns in data. Imagine a relatively simple dataset where each individual is described by a limited number of characteristics: for instance, a student and his or her demographic attributes and high school end-of-year grades. Now imagine augmenting that dataset with the forms of data described above--we know the student's address and can thus merge in spatial data on neighborhood characteristics; we have qualitative notes from the teacher's end-of-year reports and can investigate how those qualitative impressions correlate with grades. These require you as the researcher to have the facility to quickly pick up new methods to find patterns in large-scale data, with the methods and tools developing at a rapid pace.
-
-This course is meant to build upon your introductory programming course and to equip you with the computing literacy to conduct social science research in the age of "big data." This has two core components. First is learning the background tools (e.g.,[Git/Github](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners); [LaTeX](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes); working on the command line) to conduct transparent and reproducible research. Second is learning programming skills essential for social science in the big data era, with a focus on using Python for various applied tasks and SQL for tasks like working with the relational databases that form the backbone of many real-world government and commercial datasets.
 
 ## Prerequisites 
 
-- *Required*: COSC 1, ENGS 20, or another programming course approved by the QSS Chair.
-- *Recommended*: introductory statistics course.
+The course will move fast, cover a lot of material, and require active engagement with applied projects. To ensure your success, students must have taken or received AP credit for COSC 1, ENGS 20, or equivalent (with QSS chair’s permission) in order to enroll. An introductory statistics course is also recommended.
+
+
+## Goals
+
+After completing this course, students will be able to do the following in Python:
+
+* Write effective and well-documented user-defined functions
+* Work with and visualize various data structures, like lists and DataFrames
+* Manipulate a variety of data, including flat files and text data
+* Write SQL queries to pull, aggregate, and summarize data stored in database tables
+* Write API queries to systematically access and custom-build web-based databases
+* Train and apply supervised machine learning algorithms
+* Scrape HTML and text from web pages
+
+
+## Office hours (no TA OH yet)
+
+### By day of the week
+
+* Monday: 2:15-3:15 PM (Prof. OH), 7-8 PM (peer tutoring)
+* Tuesday: none (yet)
+* Wednesday: 2:15-3:15 PM (Prof. OH)
+* Thursday: 9-10 PM (peer tutoring)
+* Friday: none (yet)
+* Saturday: none (yet)
+* Sunday: 8-9 PM (peer tutoring)
+
+
+### Links & locations
+
+* Prof. OH: [Sign up for a virtual/private meeting](https://calendly.com/jaren_haber_qss), drop-ins welcome to **103 Silsby**
+* Group tutoring with Eleanor Sullivan: [Sign up](https://grouptutoring.dartmouth.edu/terms/23W/groups/12210), located on Sunday in Dart 002, on Monday in Reed 101, and on Thursday in Baker 370. [Zoom will serve as alternate](https://dartmouth.zoom.us/j/96707419408?pwd=SzJPYVQ1M0RRZmUzWWpJMzFZWXdHdz09). Tutoring begins in the third week of the quarter.
+* TA OH info: TBD
+
 
 ## DataCamp as learning resource
 
 **This class has no textbook.** Instead, we will use DataCamp to introduce you to course concepts, and you're encouraged to use other online resources like [StackOverflow](https://stackoverflow.com/) to fill in the gaps. DataCamp modules feature short introductory videos to a concept (e.g., loops), which you can click through if you're already familiar with the concept. Next is a series of tasks where you will write code, submit to test whether your code does what it's supposed to, and then progress to the next task. You can access these modules on the course page within DataCamp, which you'll sign up for using your Dartmouth email. [You can join that here.](https://www.datacamp.com/groups/shared_links/434e7826f38af70536acc1d3bf83fe921babc9c35b966195cf577468505c0473) 
 
-**Please complete all assigned modules *before* the corresponding class,** so you can get more from the in-class activities. See the DataCamp course page for specific assigned modules (which should generally match the course schedule) as well as optional modules you are welcome to complete if useful to you (these are listed as due on 11.23 but are NOT required).
+**I suggest completing the assigned modules *before* the corresponding class,** so you can get more from the in-class activities. However, completing the modules within a few days of class can also be a good way to review and deepen what you learned in class—either option is acceptable. See the DataCamp course page for specific assigned modules (which should generally match the course schedule) as well as optional modules you are welcome to complete if useful to you (these are listed as due on March 14 but are NOT required).
 
-DataCamp plays a supporting and minor role in the course, helping prepare you with the basic syntax for in-class activities. Accordingly, DataCamp modules are graded on a completion-only basis and are worth only 5% of your grade. Even so, if you’d prefer to skip the DataCamp modules, you can talk to me and I will reapportion the 5% to your second problem set.
+DataCamp plays a supporting and minor role in the course, helping prepare you with the basic syntax for in-class activities. Accordingly, DataCamp modules are graded on a completion-only basis and are worth only 5% of your grade. You will receive full credit for DataCamp modules so long as you complete them by March 14 (when your final papers are due). Even so, if you’d prefer to skip the DataCamp modules, you can talk to the Prof. to get the 5% reapportioned to your problem sets.
+
+**Any DataCamp modules listed as being due March 30 are not required.** These are optional extra practice with the course tools and concepts to support your learning—especially those of you new to Python. You will have access to these modules (for free) until March 30, after which point only DataCamp subscribers can access them. 

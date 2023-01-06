@@ -121,6 +121,8 @@ We'll go over more Git/GitHub instructions during class. Before then:
 
 2. [Create a free GitHub account](https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account) if you don't have one already
 
+3. [Set up a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+
 
 ## How to access Jhub
 

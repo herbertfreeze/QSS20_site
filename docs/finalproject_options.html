@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Project Options &#8212; QSS 20. Modern Statistical Computing</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Project Components" href="finalproject_components.html" />
+    <link rel="prev" title="Overview" href="finalproject_overview.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/laptop.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">QSS 20. Modern Statistical Computing</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Course Overview
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="course_schedule.html">
+   Course Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="useful_links.html">
+   Useful Links
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="eval_grades.html">
+   Evaluation and Grading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="class_policies.html">
+   Class Policies
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Software Setup
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="software_setup.html">
+   Overview of tools
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Final Project
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="finalproject_overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Project Options
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="finalproject_components.html">
+   Project Components
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/quantecon-mini-example/master?urlpath=tree/mini_book/docs/finalproject_options.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/docs/finalproject_options.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="../_sources/docs/finalproject_options.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#social-impact-practicum-topic-training-medical-students-to-work-with-intellectual-and-developmental-disabilities-idd">
+   1. Social Impact Practicum topic: Training medical students to work with Intellectual and Developmental Disabilities (IDD)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sip-option-1-medical-training-data">
+     SIP Option 1: Medical training data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sip-option-2-start-information-reporting-system-sirs">
+     SIP Option 2: START Information Reporting System (SIRS)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deeper-dive-into-felony-sentencing-data-used-in-problem-sets-1-and-2">
+   2. Deeper dive into felony sentencing data used in problem sets 1 and 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-senior-thesis-independent-project">
+   3. Use Senior Thesis/independent project
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Project Options</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#social-impact-practicum-topic-training-medical-students-to-work-with-intellectual-and-developmental-disabilities-idd">
+   1. Social Impact Practicum topic: Training medical students to work with Intellectual and Developmental Disabilities (IDD)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sip-option-1-medical-training-data">
+     SIP Option 1: Medical training data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sip-option-2-start-information-reporting-system-sirs">
+     SIP Option 2: START Information Reporting System (SIRS)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deeper-dive-into-felony-sentencing-data-used-in-problem-sets-1-and-2">
+   2. Deeper dive into felony sentencing data used in problem sets 1 and 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-senior-thesis-independent-project">
+   3. Use Senior Thesis/independent project
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="project-options">
+<span id="finalproject-options"></span><h1>Project Options<a class="headerlink" href="#project-options" title="Permalink to this headline">#</a></h1>
+<p>You will select one of three options for your final project:</p>
+<section id="social-impact-practicum-topic-training-medical-students-to-work-with-intellectual-and-developmental-disabilities-idd">
+<h2>1. Social Impact Practicum topic: Training medical students to work with Intellectual and Developmental Disabilities (IDD)<a class="headerlink" href="#social-impact-practicum-topic-training-medical-students-to-work-with-intellectual-and-developmental-disabilities-idd" title="Permalink to this headline">#</a></h2>
+<p>With support from the <a class="reference external" href="https://students.dartmouth.edu/social-impact/">Dartmouth Center for Social Impact</a>, one option for your final project is to complete a <a class="reference external" href="https://students.dartmouth.edu/social-impact/programs-initiatives/students/social-impact-practicums-sips">Social Impact Practicum</a> (SIP): a chance for you to use your data science skills to help a real-world organization.</p>
+<p>Your partner and data provider for the Social Impact Practicum will be the National Center for START Services (NCSS) at the Institute on Disability at University of New Hampshire (UNH). The START (Systemic, Therapeutic, Assessment, Resources, and Treatment) model advanced at UNH is a comprehensive model of service supporting the optimization of independence, treatment, and community living for individuals with IDD and mental health needs. You can find more information about the Center for Start Services <a class="reference external" href="https://centerforstartservices.org/">here</a> and <a class="reference external" href="https://iod.unh.edu/projects/center-start-services">here</a>.</p>
+<p>If you choose this project option, you have two options. The first is to analyze the results of medical student training for prescribing to folks with Intellectual and Developmental Disabilities (IDD). The second is to study a large dataset on experiences and outcomes for START participants.</p>
+<section id="sip-option-1-medical-training-data">
+<h3>SIP Option 1: Medical training data<a class="headerlink" href="#sip-option-1-medical-training-data" title="Permalink to this headline">#</a></h3>
+<p>This option addresses an important issue in public health: <em>How do medical professionals interact with patients with IDD, and how can medical student training improve this?</em> Here is more information from the project partner:</p>
+<blockquote>
+<div><p>As part of a strategic initiative to develop best practices for prescribers who work with patients with IDD and mental health concerns (IDD_MH), NCSS/UNH has begun piloting training content with medical students (residents, fellows and second/third year medical students) at the Geisel School of Medicine at Dartmouth, the medical school and the University of Puerto Rico, and Franklin Pierce University’s Physician Assistant Program.  This includes a 6 hours of trainings based on the recently published <a class="reference external" href="https://centerforstartservices.org/IDD-MH-Prescribing-Guidelines">Integrated Mental Health Treatment Guidelines for Prescribers in Intellectual and Developmental Disabilities</a> as well as pre- and post-evaluation data.</p>
+</div></blockquote>
+<blockquote>
+<div><p>The START program at UNH would like students of QSS 20 to analyze this training evaluation data to assess strengths and growth points as well as recommend changes based on the data which could improve efficacy, retention, impact, or all of the above.  (For example, the training videos which include the lived experience of individuals are already scoring higher, so that is one already-identified place where small changes to the content delivery medium could improve results).</p>
+</div></blockquote>
+<blockquote>
+<div><p>At present (Fall 2022), there are 200+ evaluations of 40+ medical students, and by November we expect this number to grow to 300+ evaluations from 60+ distinct medical students.</p>
+</div></blockquote>
+<p>The training was six hours in length, and students evaluated the program by answering multiple choice and open-ended questions. You can view the <a class="reference external" href="https://drive.google.com/drive/folders/1csAgglJta0Nbriyl358LKBwecVgKlbwb?usp=sharing">program evaluation surveys here</a> or see the <a class="reference external" href="https://docs.google.com/document/d/1zctCWNn5S3PaZGCyKkKo0lnMBxiYUiDv/edit?usp=sharing&amp;ouid=106209867651452643666&amp;rtpof=true&amp;sd=true">general SIP proposal</a> for more info.</p>
+<p>Here are a few broad questions you could investigate if choosing this option:</p>
+<p><em>Is this working?</em></p>
+<ul class="simple">
+<li><p>Changes in perspectives and depth of understanding toward IDD?</p></li>
+<li><p>Consider training outcomes from ranking questions (e.g., with regression) and free-form text (e.g., topic models)</p></li>
+<li><p>Connect with participant demographics</p></li>
+</ul>
+<p><em>What training components matter most?</em></p>
+<ul class="simple">
+<li><p>Expert presentation &amp; best practices</p></li>
+<li><p>Guest speakers with personal experience of IDD</p></li>
+<li><p>Other training elements suggested in open-ended questions</p></li>
+</ul>
+</section>
+<section id="sip-option-2-start-information-reporting-system-sirs">
+<h3>SIP Option 2: START Information Reporting System (SIRS)<a class="headerlink" href="#sip-option-2-start-information-reporting-system-sirs" title="Permalink to this headline">#</a></h3>
+<p>These data include about 13,000 START participants from 2013 to 2021. The more detailed files include only the cohort of participants from 2019 to 2020. These data include:</p>
+<ul class="simple">
+<li><p>Encounters with law enforcement</p></li>
+<li><p>Emergency visits</p></li>
+<li><p>Physical restraint during crises</p></li>
+<li><p>Demographics</p></li>
+<li><p>Intake info</p></li>
+</ul>
+<p>Here are a few broad questions you could investigate if choosing this option:</p>
+<p><strong>Over full SIRS data</strong>:</p>
+<ul class="simple">
+<li><p>What is the composition of START participants by race, gender, and living situation, and how do these correlate with disadvantage in terms of family background, crisis events, or aggressive behavior?</p></li>
+<li><p>How often do START participants encounter law enforcement or exhibit aggressive or self-harming behaviors, and how have these changed over time?</p></li>
+<li><p>How did trends in START participation (e.g., hospital visits) change with the COVID pandemic compared with the previous, longer time scale (back to 2010)?</p></li>
+</ul>
+<p><strong>Over 2019-2020 cohort</strong>:
+General question: <em>How have those with disabilities fared during COVID-19 and what racial inequalities do we see in its impact?</em></p>
+<ul class="simple">
+<li><p>Did the COVID lockdowns increase suicidal ideation over time, e.g. through decreased access to mental health support or stress related to living situations?</p></li>
+<li><p>Did the COVID lockdowns introduce challenges due to encounters with law enforcement, who sometimes respond inappropriately to young adults with disabilities (e.g., they may refer them to Emergency Departments with excessive frequency)?</p></li>
+<li><p>What themes emerge in the Family Experiences with Severe Mental Illness Scale (FEIS) open responses (e.g., through topic modeling), such as desire for higher caregiver involvement and/or caregiver receptivity to this desire—and how do these themes vary with family demographics or other background factors?</p></li>
+</ul>
+<p>You can view the <a class="reference external" href="https://docs.google.com/spreadsheets/d/1HV5kl3IOzWen91LkHBcFZi3so_angRf8/edit?usp=sharing&amp;ouid=106209867651452643666&amp;rtpof=true&amp;sd=true">data dictionary here</a>.</p>
+<p><strong>These options require working in a group.</strong></p>
+</section>
+</section>
+<section id="deeper-dive-into-felony-sentencing-data-used-in-problem-sets-1-and-2">
+<h2>2. Deeper dive into felony sentencing data used in problem sets 1 and 2<a class="headerlink" href="#deeper-dive-into-felony-sentencing-data-used-in-problem-sets-1-and-2" title="Permalink to this headline">#</a></h2>
+<p>In the first two problem sets, you used and got familiar with the Cook County State Attorney’s Office Felony Sentencing Data to investigate racial disparities in sentence length and within-judge disparities. With this project option, you’d do a deeper dive into the felony sentencing data to address another question, such as:</p>
+<ol class="simple">
+<li><p>more rigorous analyses of disparities using causal inference techniques</p></li>
+<li><p>analyses of other fields in the data (e.g., neighborhood disparities; how judge demographics relate to sentencing behavior)</p></li>
+</ol>
+<p><strong>This option requires working in a group.</strong></p>
+</section>
+<section id="use-senior-thesis-independent-project">
+<h2>3. Use Senior Thesis/independent project<a class="headerlink" href="#use-senior-thesis-independent-project" title="Permalink to this headline">#</a></h2>
+<p>If you’re already pursuing a significant research project, you may use this course to advance an existing work in progress, covering parts and analysis you might not include otherwise.</p>
+<p>The project needs to align with the <a class="reference external" href="https://github.com/jhaber-zz/QSS20_public/blob/main/finalproj_guidelines/final_project_rubric.csv">evaluation criteria</a> — e.g., it must result in data you can share with us, a repo you can share, and a 10-page CS-style report.</p>
+<p>Please choose this option with caution as you will be held to same grading standard as groups of 3-4. Moreover, unless you have already made substantial progress on an independent project, you probably won’t be able to finish it in one short quarter.</p>
+<p><strong>You can complete this option either individually or in a group</strong> (i.e., by focusing on one person’s project and getting group help).</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="finalproject_overview.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Overview</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="finalproject_components.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Project Components</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Jaren Haber<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

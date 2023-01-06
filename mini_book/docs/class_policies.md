@@ -9,7 +9,7 @@ kernelspec:
   name: python3
 ---
 
-(dartmouth_policies)=
+(class_policies)=
 
 # Class Policies
 

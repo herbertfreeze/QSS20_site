@@ -28,7 +28,7 @@ There are folders in Piazza for each major part of the course, including each pr
     - `latex/overleaf`: LaTeX syntax, working with templates on Overleaf, etc.
     - `miscellaneous`: random stuff, i.e. anything that doesn't fit a problem set, final project component, or the above folders.
 
-- **Locally-installed Python**. While cloud computing Using Python locally is generally Eventually, you'll leave the course and Dartmouth and need to know how to use Python locally. So in addition to getting used to Jhub, please install Python and the associated packages to run things locally. 
+- **Locally-installed Python**. While cloud computing is common in data science, the baseline for code development is to work locally. So the main interface we will use to code is your own laptop, on which you will install Python and relevant packages. 
 
 - **Text editor**. You will need this when working with code locally to edit `.py` scripts, text files, and `.yaml` files. See instructions below.
 

@@ -1,4 +1,4 @@
-# QSS 20. Modern Statistical Computing
+# QSS 20. Modern Statistical Computing 
 
 QSS 20 is a foundational and required course in the Quantitative Social Science curriculum that equips students with the computing literacy to conduct social science research in the age of “big data.” The skills students learn in QSS 20 are building blocks for data science applications from research to industry to nonprofits and government. This course builds on students' introductory programming course and teaches you how to draw meaningful insights from real-world, often messy datasets, so you can help incorporate data into decision-making and analysis. The course will teach students to quickly pick up new methods and find patterns in large-scale data—essential skills given that methods and tools for modern statistical computing develop at a rapid pace, and in real-world data science you sometimes don’t know what tools you need to know until you need to know them. 
 

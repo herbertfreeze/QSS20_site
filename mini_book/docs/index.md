@@ -23,24 +23,25 @@ After completing this course, students will be able to do the following in Pytho
 * Scrape HTML and text from web pages
 
 
-## Office hours (no TA OH yet)
+## Office hours
 
 ### By day of the week
 
 * Monday: 2:15-3:15 PM (Prof. OH), 7-8 PM (peer tutoring)
-* Tuesday: none (yet)
+* Tuesday: 1-2 PM (Eunice OH)
 * Wednesday: 2:15-3:15 PM (Prof. OH)
 * Thursday: 9-10 PM (peer tutoring)
-* Friday: none (yet)
-* Saturday: none (yet)
-* Sunday: 8-9 PM (peer tutoring)
+* Friday: 2-3 PM (Ramsey OH)
+* Saturday: none
+* Sunday: 2-3 PM (Ramsey OH), 8-9 PM (peer tutoring)
 
 
 ### Links & locations
 
-* Prof. OH: [Sign up for a virtual/private meeting](https://calendly.com/jaren_haber_qss), drop-ins welcome to **103 Silsby**
-* Group tutoring with Eleanor Sullivan: [Sign up](https://grouptutoring.dartmouth.edu/terms/23W/groups/12210), located on Sunday in Dart 002, on Monday in Reed 101, and on Thursday in Baker 370. [Zoom will serve as alternate](https://dartmouth.zoom.us/j/96707419408?pwd=SzJPYVQ1M0RRZmUzWWpJMzFZWXdHdz09). Tutoring begins in the third week of the quarter.
-* TA OH info: TBD
+* Prof. OH: 2:15-3:15 PM Monday/Wednesday; drop-ins welcome to **103 Silsby**; [sign up for a virtual/private meeting](https://calendly.com/jaren_haber_qss)
+* Group tutoring with Eleanor Sullivan: [sign up here](https://grouptutoring.dartmouth.edu/terms/23W/groups/12210); 7-8 PM Monday in Reed 101, 9-10 PM Thursday in Baker 370, 8-9 PM Sunday in Dart 002; [Zoom as an alternate](https://dartmouth.zoom.us/j/96707419408?pwd=SzJPYVQ1M0RRZmUzWWpJMzFZWXdHdz09). Tutoring begins in the second week of the quarter.
+* Eunice OH: 1-2 PM Tuesday [on Zoom](https://dartmouth.zoom.us/j/3848466647)
+* Ramsey OH: 2-3 PM Friday/Sunday in Haldeman 046, [Zoom as an alternate](https://dartmouth.zoom.us/j/6368699727)
 
 
 ## DataCamp as learning resource

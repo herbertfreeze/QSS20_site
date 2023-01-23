@@ -45,7 +45,7 @@ There are folders in Piazza for each major part of the course, including each pr
 
 Please download Python 3.9+ via [the Anaconda distribution system](https://www.anaconda.com/what-is-anaconda/) ([download it here](https://www.anaconda.com/products/distribution)). 3.8+ is strongly preferred due to compatibility between `.pkl` files.
 
-Once you've installed Python locally, install all the packages listed in the [requirements.txt file on GitHub](https://github.com/jhaber-zz/QSS20_public/blob/main/requirements.txt). 
+Once you've installed Python locally, install all the packages listed in the [requirements.txt file on GitHub](https://github.com/jhaber-zz/QSS20_public/blob/main/requirements.txt). You can use Anaconda to install the major packages from this list (e.g., `scikit-learn`); the others you will need to install with `pip install` from the command line. Package names may vary a little depending on operating system--the version names in `requirements.txt` are for Linux. If you don't yet have pip installed locally, [here are instructions for installing pip on **Mac/OSX**](https://www.geeksforgeeks.org/how-to-install-pip-in-macos/) and [here are instructions for installing pip on **Windows**](https://www.geeksforgeeks.org/how-to-install-pip-on-windows/). Most of these packages you won't need until the second half of class, but you'll likely save yourself some anxiety if you get them all installed in the first week of class.
 
 If working with `.py` scripts from command line, you can also [create a virtual environment](https://python.land/virtual-environments/virtualenv) and install all the packages within that (via `pip3 install -r requirements.txt`) to maintain a clean, isolated set of packages for the course. This is best practice for local coding as it reduces the risk of dependency conflicts, but you'll need to remember to activate the virtual environment whenever you execute code on command line. (Virtual environments don't usually work when using Jupyter notebooks, especially when launched from Anaconda.)
 
@@ -121,7 +121,7 @@ We'll go over more Git/GitHub instructions during class. Before then:
 
 2. [Create a free GitHub account](https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account) if you don't have one already
 
-3. [Set up a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+3. [Set up a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic)
 
 
 ## How to access Jhub
@@ -135,7 +135,7 @@ We'll go over more Git/GitHub instructions during class. Before then:
 :align: center
 ```
 
-2. Navigate to your home directory by clicking the folder icon at the top left. You can create whatever directory structure and files you want there without it interfering the the common class content (which you can't change and lives in `/shared/QSS20`):
+2. Navigate to your home directory--which belongs only to you--by clicking the folder icon at the top left. Then click the **blue plus icon** to create and name a new folder (you could call it `QSS20_classwork/`) in which to store your work for this class:
 
 ```{image} ../images/jhub2.png
 :alt: jhub 2
@@ -163,6 +163,11 @@ We'll go over more Git/GitHub instructions during class. Before then:
 ```
 
 We're going to focus on interfacing with GitHub from your local computer, so don't worry too much about the remote terminal for now.
+
+
+### Storing your work on Jhub
+
+You can access the common class content (e.g., slides and blank jupyter notebooks for activities) in the write-protected folder `/shared/QSS20`, but **you cannot save any edits to these files**. Instead, copy each blank notebook (e.g., `00_introclass.ipynb`) into your classwork folder you created inside your home directory. Your changes to anything in this folder will persist throughout the quarter, and you can also download them to submit for psets and the like. You can create whatever directory structure and files you want there without it interfering the the common class content in `/shared/QSS20`, which (again) you can't save changes to and therefore can't download.
 
 
 ### [QSS20 repository](https://github.com/jhaber-zz/QSS20_public) content on Jhub

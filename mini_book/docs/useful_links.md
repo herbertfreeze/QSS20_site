@@ -13,9 +13,15 @@ kernelspec:
 
 # Useful Links
 
+## Surveys
+
+* [Final project group preferences form](https://forms.gle/FxrVnLGXrLiGDtTh6) (due Friday, 01/27/23)
+* [Problem set 2 feedback form](https://forms.gle/R7GD8CYZiH182wwJ9) to complete *after* submitting pset 2
+* [Complete this student information form](https://forms.gle/irAmC6sbBjEwKvL99)
+
+
 ## Links for getting started
 
-* [Complete this student information form](https://forms.gle/irAmC6sbBjEwKvL99)
 * [Join the course DataCamp](https://www.datacamp.com/groups/shared_links/434e7826f38af70536acc1d3bf83fe921babc9c35b966195cf577468505c0473)
 * [Join the course Piazza](https://piazza.com/dartmouth/winter2023/qss020wi23)
 * [Create a free Overleaf account](https://www.overleaf.com/register)

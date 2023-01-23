@@ -123,6 +123,8 @@ We'll go over more Git/GitHub instructions during class. Before then:
 
 3. [Set up a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic)
 
+If you try running `git clone` to copy over a repository and get an error like `xcrun: error: invalid active developer path`, you can find instructions for a fix in [this StackOverflow post](https://apple.stackexchange.com/a/254381).
+
 
 ## How to access Jhub
 

@@ -371,6 +371,11 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#storing-your-work-on-jhub">
+     Storing your work on Jhub
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#qss20-repository-content-on-jhub">
      QSS20 repository content on Jhub
     </a>
@@ -441,6 +446,11 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#storing-your-work-on-jhub">
+     Storing your work on Jhub
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#qss20-repository-content-on-jhub">
      QSS20 repository content on Jhub
     </a>
@@ -501,7 +511,7 @@ title="Print to PDF"
 <section id="locally-installed-python">
 <h2>Locally-installed Python<a class="headerlink" href="#locally-installed-python" title="Permalink to this headline">#</a></h2>
 <p>Please download Python 3.9+ via <a class="reference external" href="https://www.anaconda.com/what-is-anaconda/">the Anaconda distribution system</a> (<a class="reference external" href="https://www.anaconda.com/products/distribution">download it here</a>). 3.8+ is strongly preferred due to compatibility between <code class="docutils literal notranslate"><span class="pre">.pkl</span></code> files.</p>
-<p>Once you’ve installed Python locally, install all the packages listed in the <a class="reference external" href="https://github.com/jhaber-zz/QSS20_public/blob/main/requirements.txt">requirements.txt file on GitHub</a>.</p>
+<p>Once you’ve installed Python locally, install all the packages listed in the <a class="reference external" href="https://github.com/jhaber-zz/QSS20_public/blob/main/requirements.txt">requirements.txt file on GitHub</a>. You can use Anaconda to install the major packages from this list (e.g., <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code>); the others you will need to install with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code> from the command line. Package names may vary a little depending on operating system–the version names in <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> are for Linux. If you don’t yet have pip installed locally, <a class="reference external" href="https://www.geeksforgeeks.org/how-to-install-pip-in-macos/">here are instructions for installing pip on <strong>Mac/OSX</strong></a> and <a class="reference external" href="https://www.geeksforgeeks.org/how-to-install-pip-on-windows/">here are instructions for installing pip on <strong>Windows</strong></a>. Most of these packages you won’t need until the second half of class, but you’ll likely save yourself some anxiety if you get them all installed in the first week of class.</p>
 <p>If working with <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts from command line, you can also <a class="reference external" href="https://python.land/virtual-environments/virtualenv">create a virtual environment</a> and install all the packages within that (via <code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code>) to maintain a clean, isolated set of packages for the course. This is best practice for local coding as it reduces the risk of dependency conflicts, but you’ll need to remember to activate the virtual environment whenever you execute code on command line. (Virtual environments don’t usually work when using Jupyter notebooks, especially when launched from Anaconda.)</p>
 <section id="how-to-open-a-jupyter-notebook">
 <h3>How to open a Jupyter notebook<a class="headerlink" href="#how-to-open-a-jupyter-notebook" title="Permalink to this headline">#</a></h3>
@@ -547,7 +557,7 @@ To create a new notebook, click <strong>New</strong> in right hand corner. If op
 <ol class="simple">
 <li><p><a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Install Git</a> if you haven’t already</p></li>
 <li><p><a class="reference external" href="https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account">Create a free GitHub account</a> if you don’t have one already</p></li>
-<li><p><a class="reference external" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">Set up a personal access token</a></p></li>
+<li><p><a class="reference external" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic">Set up a personal access token</a></p></li>
 </ol>
 </section>
 <section id="how-to-access-jhub">
@@ -557,7 +567,7 @@ To create a new notebook, click <strong>New</strong> in right hand corner. If op
 </ol>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/jhub1.png"><img alt="jhub 1" class="bg-primary mb-1 align-center" src="../_images/jhub1.png" style="width: 500px;" /></a>
 <ol class="simple">
-<li><p>Navigate to your home directory by clicking the folder icon at the top left. You can create whatever directory structure and files you want there without it interfering the the common class content (which you can’t change and lives in <code class="docutils literal notranslate"><span class="pre">/shared/QSS20</span></code>):</p></li>
+<li><p>Navigate to your home directory–which belongs only to you–by clicking the folder icon at the top left. Then click the <strong>blue plus icon</strong> to create and name a new folder (you could call it <code class="docutils literal notranslate"><span class="pre">QSS20_classwork/</span></code>) in which to store your work for this class:</p></li>
 </ol>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/jhub2.png"><img alt="jhub 2" class="bg-primary mb-1 align-center" src="../_images/jhub2.png" style="width: 500px;" /></a>
 <ol class="simple">
@@ -569,6 +579,10 @@ To create a new notebook, click <strong>New</strong> in right hand corner. If op
 </ol>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/terminal.png"><img alt="jhub terminal menu" class="bg-primary mb-1 align-center" src="../_images/terminal.png" style="width: 300px;" /></a>
 <p>We’re going to focus on interfacing with GitHub from your local computer, so don’t worry too much about the remote terminal for now.</p>
+<section id="storing-your-work-on-jhub">
+<h3>Storing your work on Jhub<a class="headerlink" href="#storing-your-work-on-jhub" title="Permalink to this headline">#</a></h3>
+<p>You can access the common class content (e.g., slides and blank jupyter notebooks for activities) in the write-protected folder <code class="docutils literal notranslate"><span class="pre">/shared/QSS20</span></code>, but <strong>you cannot save any edits to these files</strong>. Instead, copy each blank notebook (e.g., <code class="docutils literal notranslate"><span class="pre">00_introclass.ipynb</span></code>) into your classwork folder you created inside your home directory. Your changes to anything in this folder will persist throughout the quarter, and you can also download them to submit for psets and the like. You can create whatever directory structure and files you want there without it interfering the the common class content in <code class="docutils literal notranslate"><span class="pre">/shared/QSS20</span></code>, which (again) you can’t save changes to and therefore can’t download.</p>
+</section>
 <section id="qss20-repository-content-on-jhub">
 <h3><a class="reference external" href="https://github.com/jhaber-zz/QSS20_public">QSS20 repository</a> content on Jhub<a class="headerlink" href="#qss20-repository-content-on-jhub" title="Permalink to this headline">#</a></h3>
 <p>Course content like slides or activities should automatically populate this directory on Jhub: <code class="docutils literal notranslate"><span class="pre">shared/QSS20/</span></code>. However, to get the latest content added to course repo (anything added/changed since the last user started a new server), you might need to restart your server as follows:</p>

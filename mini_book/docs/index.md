@@ -17,10 +17,9 @@ After completing this course, students will be able to do the following in Pytho
 * Write effective and well-documented user-defined functions
 * Work with and visualize various data structures, like lists and DataFrames
 * Manipulate a variety of data, including flat files and text data
-* Write SQL queries to pull, aggregate, and summarize data stored in database tables
 * Write API queries to systematically access and custom-build web-based databases
 * Train and apply supervised machine learning algorithms
-* Scrape HTML and text from web pages
+* Write SQL queries to pull, aggregate, and summarize data stored in database tables
 
 
 ## Office hours

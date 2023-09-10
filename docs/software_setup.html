@@ -1,35 +1,45 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html >
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Overview of tools &#8212; QSS 20. Modern Statistical Computing</title>
-
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
-
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -37,12 +47,12 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -50,454 +60,290 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/software_setup';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Overview" href="finalproject_overview.html" />
     <link rel="prev" title="Class Policies" href="class_policies.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-
-
-    <!-- Google Analytics -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
 
-    <div class="container-fluid" id="banner"></div>
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
 
-
-
-    <div class="container-xl">
-      <div class="row">
-
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
-
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-
-
-
-      <img src="../_static/laptop.png" class="logo" alt="logo">
-
-
-      <h1 class="site-logo" id="site-title">QSS 20. Modern Statistical Computing</h1>
-
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Course Overview
- </span>
-</p>
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/laptop.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/laptop.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Overview</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="course_schedule.html">
-   Course Schedule
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="useful_links.html">
-   Useful Links
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="eval_grades.html">
-   Evaluation and Grading
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="class_policies.html">
-   Class Policies
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="course_schedule.html">Course Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="useful_links.html">Useful Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eval_grades.html">Evaluation and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class_policies.html">Class Policies</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Software Setup
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Software Setup</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Overview of tools
-  </a>
- </li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Overview of tools</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Final Project
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Final Project</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="finalproject_overview.html">
-   Overview
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="finalproject_options.html">
-   Project Options
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="finalproject_components.html">
-   Project Components
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="finalproject_overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finalproject_options.html">Project Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finalproject_components.html">Project Components</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-
-
-
-
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-
-    <div class="header-article row sticky-top noprint">
-
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/quantecon-mini-example/master?urlpath=tree/mini_book/docs/software_setup.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-
-
-<span class="headerbtn__icon-container">
-
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-
-    </ul>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/software_setup.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
+
+
+
 
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
+  
 
-
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/docs/software_setup.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download notebook file"
->
+`);
+</script>
 
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-
-      <li>
-        <a href="../_sources/docs/software_setup.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-
-      <li>
-
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-
->
-
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#locally-installed-python">
-   Locally-installed Python
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#how-to-open-a-jupyter-notebook">
-     How to open a Jupyter notebook
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#text-editor">
-   Text editor
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#git-github">
-   Git/GitHub
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-to-access-jhub">
-   How to access Jhub
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#storing-your-work-on-jhub">
-     Storing your work on Jhub
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#qss20-repository-content-on-jhub">
-     QSS20 repository content on Jhub
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#terminal-terminal-emulator">
-   Terminal/terminal emulator
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#mac-osx">
-     Mac/OSX
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#windows">
-     Windows
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Overview of tools</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
+              
+              
 
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#locally-installed-python">
-   Locally-installed Python
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#how-to-open-a-jupyter-notebook">
-     How to open a Jupyter notebook
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#text-editor">
-   Text editor
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#git-github">
-   Git/GitHub
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-to-access-jhub">
-   How to access Jhub
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#storing-your-work-on-jhub">
-     Storing your work on Jhub
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#qss20-repository-content-on-jhub">
-     QSS20 repository content on Jhub
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#terminal-terminal-emulator">
-   Terminal/terminal emulator
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#mac-osx">
-     Mac/OSX
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#windows">
-     Windows
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Overview of tools</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#locally-installed-python">Locally-installed Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-open-a-jupyter-notebook">How to open a Jupyter notebook</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-editor">Text editor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-github">Git/GitHub</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-access-jhub">How to access Jhub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#storing-your-work-on-jhub">Storing your work on Jhub</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qss20-repository-content-on-jhub">QSS20 repository content on Jhub</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#terminal-terminal-emulator">Terminal/terminal emulator</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mac-osx">Mac/OSX</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
 
-              <div>
-
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="overview-of-tools">
 <span id="software-setup"></span><h1>Overview of tools<a class="headerlink" href="#overview-of-tools" title="Permalink to this headline">#</a></h1>
-<p>We will be using the following tools in the course:</p>
-<ul class="simple">
-<li><p><strong>Piazza for communication, i.e. Q&amp;A and announcements</strong>. You can join the class Piazza by <a class="reference external" href="https://piazza.com/dartmouth/winter2023/qss020wi23">clicking this signup link</a>. See <a class="reference external" href="https://piazza.com/help/formatting.html">here</a> for formatting help (e.g., you can add code or even format a post in LaTeX!), and feel free to give the developers feedback by emailing <a class="reference external" href="mailto:team&#37;&#52;&#48;piazza&#46;com">team<span>&#64;</span>piazza<span>&#46;</span>com</a>. For project-related teamwork, you can make private posts visible to select people to communicate directly with your project group.</p></li>
-</ul>
-<p><strong>Please use Piazza instead of emailing the instructor or TA(s)</strong>, as other students will likely share your questions and may be able to answer them too (or edit the question to make it clearer or more complete). While I will be answering questions within a window of 24 hours, I encourage you to help each other and answer each other’s questions.</p>
-<p>There are folders in Piazza for each major part of the course, including each problem set, project milestone, and final project component (the final presentation and report share the <code class="docutils literal notranslate"><span class="pre">final_project</span></code> folder). The other folders and their respective topics for discussion are:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- `enrollment/logistics`: enrolling in the course and other logistics, like the schedule and due dates.
-- `pythonhelp_general`: python in general, not specific to problem sets or final project components.
-- `datacamp`: DataCamp, esp. about making sure your account is set up.
-- `git/github`: creating git repositories, the online GitHub interface, making commits and pull requests, etc.
+<p><strong>Please use Slack instead of emailing the instructor or TA(s)</strong>, as other students will likely share your questions and may be able to answer them too. While I will be answering questions within a window of 24 hours, I encourage you to help each other and answer each other’s questions.</p>
+<p>There are Slack channels for each major part of the course. The other folders and their respective topics for discussion are:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- `qss20-general`: logistics, schedule, projects, due dates, and announcements, and general chat.
+- `qss20-python`: python in general, not specific to problem sets or final project components.
+- `qss20-gitCommand`: creating git repositories, the online GitHub interface, making commits and pull requests, etc.
 - `latex/overleaf`: LaTeX syntax, working with templates on Overleaf, etc.
-- `miscellaneous`: random stuff, i.e. anything that doesn&#39;t fit a problem set, final project component, or the above folders.
 </pre></div>
 </div>
 <ul class="simple">
@@ -512,24 +358,24 @@ title="Print to PDF"
 <h2>Locally-installed Python<a class="headerlink" href="#locally-installed-python" title="Permalink to this headline">#</a></h2>
 <p>Please download Python 3.9+ via <a class="reference external" href="https://www.anaconda.com/what-is-anaconda/">the Anaconda distribution system</a> (<a class="reference external" href="https://www.anaconda.com/products/distribution">download it here</a>). 3.8+ is strongly preferred due to compatibility between <code class="docutils literal notranslate"><span class="pre">.pkl</span></code> files.</p>
 <p>Once you’ve installed Python locally, install all the packages listed in the <a class="reference external" href="https://github.com/jhaber-zz/QSS20_public/blob/main/requirements.txt">requirements.txt file on GitHub</a>. You can use Anaconda to install the major packages from this list (e.g., <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code>); the others you will need to install with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code> from the command line. Package names may vary a little depending on operating system–the version names in <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> are for Linux. If you don’t yet have pip installed locally, <a class="reference external" href="https://www.geeksforgeeks.org/how-to-install-pip-in-macos/">here are instructions for installing pip on <strong>Mac/OSX</strong></a> and <a class="reference external" href="https://www.geeksforgeeks.org/how-to-install-pip-on-windows/">here are instructions for installing pip on <strong>Windows</strong></a>. Most of these packages you won’t need until the second half of class, but you’ll likely save yourself some anxiety if you get them all installed in the first week of class.</p>
-<p>If working with <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts from command line, you can also <a class="reference external" href="https://python.land/virtual-environments/virtualenv">create a virtual environment</a> and install all the packages within that (via <code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code>) to maintain a clean, isolated set of packages for the course. This is best practice for local coding as it reduces the risk of dependency conflicts, but you’ll need to remember to activate the virtual environment whenever you execute code on command line. (Virtual environments don’t usually work when using Jupyter notebooks, especially when launched from Anaconda.)</p>
+<p>If working with <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts from command line, you can also <a class="reference external" href="https://python.land/virtual-environments/virtualenv">create a virtual environment</a> and install all the packages within that (via <code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code>) to maintain a clean, isolated set of packages for the course. This is best practice for local coding as it reduces the risk of dependency conflicts, but you’ll need to remember to activate the virtual environment whenever you execute code on command line.</p>
 <section id="how-to-open-a-jupyter-notebook">
 <h3>How to open a Jupyter notebook<a class="headerlink" href="#how-to-open-a-jupyter-notebook" title="Permalink to this headline">#</a></h3>
 <p><strong>Point and click way</strong>:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Go to applications and click on the <code class="docutils literal notranslate"><span class="pre">Anaconda-Navigator</span></code> icon. After a moment, you’ll see the interface below</p></li>
 </ol>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/an_nav.png"><img alt="anaconda navigation" class="bg-primary mb-1 align-center" src="../_images/an_nav.png" style="width: 300px;" /></a>
-<ol class="simple">
+<ol class="arabic simple" start="2">
 <li><p>Click the <strong>Launch</strong> icon under the <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">Notebook</span></code> tile. This should open up a browser window or tab with your full set of directories/files</p></li>
 </ol>
 <p><strong>Terminal way:</strong></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Navigate to folder where you want to create a new or open an existing notebook</p></li>
 <li><p>Type <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> into your terminal (Mac) or terminal emulator (Windows)</p></li>
 </ol>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/notebook_example.png"><img alt="jupyter notebook example" class="bg-primary mb-1 align-center" src="../_images/notebook_example.png" style="width: 300px;" /></a>
-<ol class="simple">
+<ol class="arabic simple" start="3">
 <li><p>As instructed by the terminal output, copy the provided link and paste into a web browser</p></li>
 </ol>
 <p><strong>Either way, you can then create or open a notebook:</strong>
@@ -541,7 +387,7 @@ To create a new notebook, click <strong>New</strong> in right hand corner. If op
 <section id="text-editor">
 <h2>Text editor<a class="headerlink" href="#text-editor" title="Permalink to this headline">#</a></h2>
 <p>Using a text editor tailored to programming is really helpful when writing code that takes longer to run, as it is visually appealing and highlights parts of the syntax (e.g., the start of a function) to more easily catch mistakes. An overall workflow for this might be:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Write and test the code on a small sample of data in a Jupyter notebook or integrated development environment (IDE).</p></li>
 <li><p>Translate the code into a <code class="docutils literal notranslate"><span class="pre">.py</span></code> or <code class="docutils literal notranslate"><span class="pre">.R</span></code> script that can be run all at once (without having to execute each cell)</p></li>
 </ol>
@@ -549,33 +395,34 @@ To create a new notebook, click <strong>New</strong> in right hand corner. If op
 <p>I suggest <a class="reference external" href="https://www.sublimetext.com/3">Sublime Text</a>, but there are many other options (e.g., <a class="reference external" href="https://atom.io/">Atom</a>, <a class="reference external" href="https://www.nano-editor.org/download.php">Nano</a>, <a class="reference external" href="http://aquamacs.org/">AquaMacs</a>).</p>
 <p>Text editors are also good for working with <code class="docutils literal notranslate"><span class="pre">.yaml</span></code> files, which can be used to store things like passwords/credentials to access APIs. Here’s an example of Sublime Text and a <code class="docutils literal notranslate"><span class="pre">.yaml</span></code> file that has the table of contents for this QSS20 course website:</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/sublime_example.png"><img alt="sublime example" class="bg-primary mb-1 align-center" src="../_images/sublime_example.png" style="width: 300px;" /></a>
-<p><em>Note:</em> An IDE (mentioned above) is a comprehensive set of tools for software development, often including a text editor, command line, and file browser in a single interface. Examples of IDEs compatible with Python include <a class="reference external" href="https://www.jetbrains.com/pycharm/">PyCharm</a>, <a class="reference external" href="https://www.spyder-ide.org/">Spyder</a>, and <a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a>. IDEs are useful but sometimes buggy when working with Jupyter notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>), so for this course please set up a command line and jupyter notebook as described in lecture.</p>
+<p><em>Note:</em> An IDE (mentioned above) is a comprehensive set of tools for software development, often including a text editor, command line, and file browser in a single interface. Examples of IDEs compatible with Python include <a class="reference external" href="https://www.jetbrains.com/pycharm/">PyCharm</a>, <a class="reference external" href="https://www.spyder-ide.org/">Spyder</a>, and <a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a>.</p>
 </section>
 <section id="git-github">
 <h2>Git/GitHub<a class="headerlink" href="#git-github" title="Permalink to this headline">#</a></h2>
 <p>We’ll go over more Git/GitHub instructions during class. Before then:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p><a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Install Git</a> if you haven’t already</p></li>
 <li><p><a class="reference external" href="https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account">Create a free GitHub account</a> if you don’t have one already</p></li>
-<li><p><a class="reference external" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic">Set up a personal access token</a></p></li>
+<li><p>[Install GitHub Desktop]](<a class="reference external" href="https://desktop.github.com/">https://desktop.github.com/</a>) which is an easy to use GUI interface.</p></li>
 </ol>
+<!-- 3. [Set up a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic) -->
 <p>If you try running <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> to copy over a repository and get an error like <code class="docutils literal notranslate"><span class="pre">xcrun:</span> <span class="pre">error:</span> <span class="pre">invalid</span> <span class="pre">active</span> <span class="pre">developer</span> <span class="pre">path</span></code>, you can find instructions for a fix in <a class="reference external" href="https://apple.stackexchange.com/a/254381">this StackOverflow post</a>.</p>
 </section>
 <section id="how-to-access-jhub">
 <h2>How to access Jhub<a class="headerlink" href="#how-to-access-jhub" title="Permalink to this headline">#</a></h2>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Navigate to: <a class="reference external" href="https://jhub.dartmouth.edu/">jhub.dartmouth.edu</a> while logged in with your Dartmouth netid. If you’re off-campus, you may need to connect to Dartmouth VPN (<a class="reference external" href="https://services.dartmouth.edu/TDClient/1806/Portal/KB/ArticleDet?ID=66806">instructions here</a>; feel free and email Dartmouth IT about issues). You should see an option on Jhub for our course. Click on it and the server will start up in a minute or two.</p></li>
 </ol>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/jhub1.png"><img alt="jhub 1" class="bg-primary mb-1 align-center" src="../_images/jhub1.png" style="width: 500px;" /></a>
-<ol class="simple">
+<ol class="arabic simple" start="2">
 <li><p>Navigate to your home directory–which belongs only to you–by clicking the folder icon at the top left. Then click the <strong>blue plus icon</strong> to create and name a new folder (you could call it <code class="docutils literal notranslate"><span class="pre">QSS20_classwork/</span></code>) in which to store your work for this class:</p></li>
 </ol>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/jhub2.png"><img alt="jhub 2" class="bg-primary mb-1 align-center" src="../_images/jhub2.png" style="width: 500px;" /></a>
-<ol class="simple">
+<ol class="arabic simple" start="3">
 <li><p>To start a new python3 notebook/kernel from scratch, click the <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3</span></code> icon in the top left of the launcher window (right portion of the screen). Make sure to give it a name (or you’ll get crowded by mysterious files called “Untitled.pynb”!):</p></li>
 </ol>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/jhub3.png"><img alt="jhub 3" class="bg-primary mb-1 align-center" src="../_images/jhub3.png" style="width: 300px;" /></a>
-<ol class="simple">
+<ol class="arabic simple" start="4">
 <li><p>If interfacing with GitHub from Jhub, open a terminal by clicking the <code class="docutils literal notranslate"><span class="pre">Terminal</span></code> icon in that same launcher menu to make a terminal that works with syntax similar to your local one:</p></li>
 </ol>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/terminal.png"><img alt="jhub terminal menu" class="bg-primary mb-1 align-center" src="../_images/terminal.png" style="width: 300px;" /></a>
@@ -585,7 +432,7 @@ To create a new notebook, click <strong>New</strong> in right hand corner. If op
 <p>You can access the common class content (e.g., slides and blank jupyter notebooks for activities) in the write-protected folder <code class="docutils literal notranslate"><span class="pre">/shared/QSS20</span></code>, but <strong>you cannot save any edits to these files</strong>. Instead, copy each blank notebook (e.g., <code class="docutils literal notranslate"><span class="pre">00_introclass.ipynb</span></code>) into your classwork folder you created inside your home directory. Your changes to anything in this folder will persist throughout the quarter, and you can also download them to submit for psets and the like. You can create whatever directory structure and files you want there without it interfering the the common class content in <code class="docutils literal notranslate"><span class="pre">/shared/QSS20</span></code>, which (again) you can’t save changes to and therefore can’t download.</p>
 </section>
 <section id="qss20-repository-content-on-jhub">
-<h3><a class="reference external" href="https://github.com/jhaber-zz/QSS20_public">QSS20 repository</a> content on Jhub<a class="headerlink" href="#qss20-repository-content-on-jhub" title="Permalink to this headline">#</a></h3>
+<h3><a class="reference external" href="https://github.com/herbertfreeze/QSS20_public">QSS20 repository</a> content on Jhub<a class="headerlink" href="#qss20-repository-content-on-jhub" title="Permalink to this headline">#</a></h3>
 <p>Course content like slides or activities should automatically populate this directory on Jhub: <code class="docutils literal notranslate"><span class="pre">shared/QSS20/</span></code>. However, to get the latest content added to course repo (anything added/changed since the last user started a new server), you might need to restart your server as follows:</p>
 <ul class="simple">
 <li><p>Click the “File” button from the top menu bar</p></li>
@@ -599,7 +446,7 @@ To create a new notebook, click <strong>New</strong> in right hand corner. If op
 <h2>Terminal/terminal emulator<a class="headerlink" href="#terminal-terminal-emulator" title="Permalink to this headline">#</a></h2>
 <p>We’ll be reviewing basic “command line” syntax, which is important for:</p>
 <ul class="simple">
-<li><p><em>Interacting with Git</em>: while there are ways to interact with Git through the online user interface (GitHub), Git’s full functionality depends on being able to interact with repositories (basically, folders that store code) through the command line.</p></li>
+<li><p><em>Interacting with Git</em>: while there are ways to interact swith Git through the online user interface (GitHub), Git’s full functionality depends on being able to interact with repositories (basically, folders that store code) through the command line.</p></li>
 <li><p><em>Executing .py or .R scripts that take a long time to finish executing</em>: ideally, you should write code that is efficient (runs quickly). But sometimes, regardless of how efficient the code is, things take a long time to run given the limited resources of your laptop or local environment. Executing code on the command line requires telling your computer to run a script and sometimes feeding that script arguments to parse. This is easier to leave in the background and less prone to error than is running time-consuming/at-scale code from a Jupyter notebook.</p></li>
 </ul>
 <section id="mac-osx">
@@ -627,7 +474,7 @@ To create a new notebook, click <strong>New</strong> in right hand corner. If op
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./docs"
         },
         predefinedOutput: true
@@ -635,50 +482,120 @@ To create a new notebook, click <strong>New</strong> in right hand corner. If op
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
+              
 
-            </main>
-            <footer class="footer-article noprint">
-
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="class_policies.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Class Policies</p>
-        </div>
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="class_policies.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Class Policies</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="finalproject_overview.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="finalproject_overview.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Overview</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-
-          By Herbert Chang<br/>
-
-            &copy; Copyright 2023.<br/>
-</p>
-        </footer>
-    </div>
-
-</div>
-
-
       </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#locally-installed-python">Locally-installed Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-open-a-jupyter-notebook">How to open a Jupyter notebook</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-editor">Text editor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-github">Git/GitHub</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-access-jhub">How to access Jhub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#storing-your-work-on-jhub">Storing your work on Jhub</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qss20-repository-content-on-jhub">QSS20 repository content on Jhub</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#terminal-terminal-emulator">Terminal/terminal emulator</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mac-osx">Mac/OSX</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jaren Haber
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
     </div>
-
+  </div>
+  
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

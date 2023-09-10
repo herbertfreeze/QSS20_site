@@ -13,20 +13,14 @@ kernelspec:
 
 # Overview of tools
 
-We will be using the following tools in the course:
+**Please use Slack instead of emailing the instructor or TA(s)**, as other students will likely share your questions and may be able to answer them too. While I will be answering questions within a window of 24 hours, I encourage you to help each other and answer each other's questions. 
 
-- **Piazza for communication, i.e. Q&A and announcements**. You can join the class Piazza by [clicking this signup link](https://piazza.com/dartmouth/winter2023/qss020wi23). See [here](https://piazza.com/help/formatting.html) for formatting help (e.g., you can add code or even format a post in LaTeX!), and feel free to give the developers feedback by emailing team@piazza.com. For project-related teamwork, you can make private posts visible to select people to communicate directly with your project group. 
+There are Slack channels for each major part of the course. The other folders and their respective topics for discussion are:
 
-**Please use Piazza instead of emailing the instructor or TA(s)**, as other students will likely share your questions and may be able to answer them too (or edit the question to make it clearer or more complete). While I will be answering questions within a window of 24 hours, I encourage you to help each other and answer each other's questions. 
-
-There are folders in Piazza for each major part of the course, including each problem set, project milestone, and final project component (the final presentation and report share the `final_project` folder). The other folders and their respective topics for discussion are:
-
-    - `enrollment/logistics`: enrolling in the course and other logistics, like the schedule and due dates.
-    - `pythonhelp_general`: python in general, not specific to problem sets or final project components.
-    - `datacamp`: DataCamp, esp. about making sure your account is set up.
-    - `git/github`: creating git repositories, the online GitHub interface, making commits and pull requests, etc.
+    - `qss20-general`: logistics, schedule, projects, due dates, and announcements, and general chat.
+    - `qss20-python`: python in general, not specific to problem sets or final project components.
+    - `qss20-gitCommand`: creating git repositories, the online GitHub interface, making commits and pull requests, etc.
     - `latex/overleaf`: LaTeX syntax, working with templates on Overleaf, etc.
-    - `miscellaneous`: random stuff, i.e. anything that doesn't fit a problem set, final project component, or the above folders.
 
 - **Locally-installed Python**. While cloud computing is common in data science, the baseline for code development is to work locally. So the main interface we will use to code is your own laptop, on which you will install Python and relevant packages. 
 
@@ -47,7 +41,7 @@ Please download Python 3.9+ via [the Anaconda distribution system](https://www.a
 
 Once you've installed Python locally, install all the packages listed in the [requirements.txt file on GitHub](https://github.com/jhaber-zz/QSS20_public/blob/main/requirements.txt). You can use Anaconda to install the major packages from this list (e.g., `scikit-learn`); the others you will need to install with `pip install` from the command line. Package names may vary a little depending on operating system--the version names in `requirements.txt` are for Linux. If you don't yet have pip installed locally, [here are instructions for installing pip on **Mac/OSX**](https://www.geeksforgeeks.org/how-to-install-pip-in-macos/) and [here are instructions for installing pip on **Windows**](https://www.geeksforgeeks.org/how-to-install-pip-on-windows/). Most of these packages you won't need until the second half of class, but you'll likely save yourself some anxiety if you get them all installed in the first week of class.
 
-If working with `.py` scripts from command line, you can also [create a virtual environment](https://python.land/virtual-environments/virtualenv) and install all the packages within that (via `pip3 install -r requirements.txt`) to maintain a clean, isolated set of packages for the course. This is best practice for local coding as it reduces the risk of dependency conflicts, but you'll need to remember to activate the virtual environment whenever you execute code on command line. (Virtual environments don't usually work when using Jupyter notebooks, especially when launched from Anaconda.)
+If working with `.py` scripts from command line, you can also [create a virtual environment](https://python.land/virtual-environments/virtualenv) and install all the packages within that (via `pip3 install -r requirements.txt`) to maintain a clean, isolated set of packages for the course. This is best practice for local coding as it reduces the risk of dependency conflicts, but you'll need to remember to activate the virtual environment whenever you execute code on command line.
 
 ### How to open a Jupyter notebook
 
@@ -110,7 +104,7 @@ Text editors are also good for working with `.yaml` files, which can be used to 
 :align: center
 ```
 
-_Note:_ An IDE (mentioned above) is a comprehensive set of tools for software development, often including a text editor, command line, and file browser in a single interface. Examples of IDEs compatible with Python include [PyCharm](https://www.jetbrains.com/pycharm/), [Spyder](https://www.spyder-ide.org/), and [Visual Studio Code](https://code.visualstudio.com/). IDEs are useful but sometimes buggy when working with Jupyter notebooks (`.ipynb`), so for this course please set up a command line and jupyter notebook as described in lecture. 
+_Note:_ An IDE (mentioned above) is a comprehensive set of tools for software development, often including a text editor, command line, and file browser in a single interface. Examples of IDEs compatible with Python include [PyCharm](https://www.jetbrains.com/pycharm/), [Spyder](https://www.spyder-ide.org/), and [Visual Studio Code](https://code.visualstudio.com/).
 
 
 ## Git/GitHub
@@ -121,7 +115,9 @@ We'll go over more Git/GitHub instructions during class. Before then:
 
 2. [Create a free GitHub account](https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account) if you don't have one already
 
-3. [Set up a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic)
+3. [Install GitHub Desktop]](https://desktop.github.com/) which is an easy to use GUI interface.
+
+<!-- 3. [Set up a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic) -->
 
 If you try running `git clone` to copy over a repository and get an error like `xcrun: error: invalid active developer path`, you can find instructions for a fix in [this StackOverflow post](https://apple.stackexchange.com/a/254381).
 
@@ -172,7 +168,7 @@ We're going to focus on interfacing with GitHub from your local computer, so don
 You can access the common class content (e.g., slides and blank jupyter notebooks for activities) in the write-protected folder `/shared/QSS20`, but **you cannot save any edits to these files**. Instead, copy each blank notebook (e.g., `00_introclass.ipynb`) into your classwork folder you created inside your home directory. Your changes to anything in this folder will persist throughout the quarter, and you can also download them to submit for psets and the like. You can create whatever directory structure and files you want there without it interfering the the common class content in `/shared/QSS20`, which (again) you can't save changes to and therefore can't download.
 
 
-### [QSS20 repository](https://github.com/jhaber-zz/QSS20_public) content on Jhub
+### [QSS20 repository](https://github.com/herbertfreeze/QSS20_public) content on Jhub
 
 Course content like slides or activities should automatically populate this directory on Jhub: `shared/QSS20/`. However, to get the latest content added to course repo (anything added/changed since the last user started a new server), you might need to restart your server as follows:
 
@@ -186,7 +182,7 @@ Course content like slides or activities should automatically populate this dire
 
 We’ll be reviewing basic "command line" syntax, which is important for:
 
-- *Interacting with Git*: while there are ways to interact with Git through the online user interface (GitHub), Git's full functionality depends on being able to interact with repositories (basically, folders that store code) through the command line.
+- *Interacting with Git*: while there are ways to interact swith Git through the online user interface (GitHub), Git's full functionality depends on being able to interact with repositories (basically, folders that store code) through the command line.
 
 -  *Executing .py or .R scripts that take a long time to finish executing*: ideally, you should write code that is efficient (runs quickly). But sometimes, regardless of how efficient the code is, things take a long time to run given the limited resources of your laptop or local environment. Executing code on the command line requires telling your computer to run a script and sometimes feeding that script arguments to parse. This is easier to leave in the background and less prone to error than is running time-consuming/at-scale code from a Jupyter notebook. 
 
